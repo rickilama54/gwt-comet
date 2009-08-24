@@ -1,3 +1,4 @@
+#Getting started
 = Getting Started =
 
 This getting started guide gives an overview and example code for setting up and processing of Comet messages from the client and server perspective.
