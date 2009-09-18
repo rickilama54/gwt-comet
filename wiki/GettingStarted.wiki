@@ -3,8 +3,6 @@
 
 This getting started guide gives an overview and example code for setting up and processing of Comet messages from the client and server perspective.
 
-Firstly this library overrides GWT's HTTP client package to support {{{XMLHTTPRequest.onreadystatechange = 3 (RECEIVING)}}} and therefore must be on the classpath before the GWT libraries to function correctly. 
-
 == Client Side ==
 
 Client side application code makes uses of three main classes:
