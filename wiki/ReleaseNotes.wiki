@@ -1,0 +1,8 @@
+#Release notes
+
+= Release Notes =
+
+== 1.0.8 ==
+
+  * Fixed an issue with {{{HTTPRequestCometTransport}}}'s handling of server side errors. [http://code.google.com/p/gwt-comet/source/detail?r=23 r23]
+  * Made a change to ensure there is only one active {{{CometResponse}}} per {{{CometSession}}} [http://code.google.com/p/gwt-comet/source/detail?r=24 r24]
