@@ -2,6 +2,10 @@
 
 = Release Notes =
 
+== 1.0.9 ==
+
+  * Added support for keeping the HTTP session alive when only the comet connection is in use and no other client HTTP requests are being made which would normally cause the HTTP session to timeout. [http://code.google.com/p/gwt-comet/source/detail?r=28 r28] [http://code.google.com/p/gwt-comet/source/detail?r=29 r29]
+
 == 1.0.8 ==
 
   * Fixed an issue with {{{HTTPRequestCometTransport}}}'s handling of server side errors. [http://code.google.com/p/gwt-comet/source/detail?r=23 r23]
