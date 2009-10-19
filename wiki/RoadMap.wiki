@@ -5,4 +5,5 @@
     * [http://docs.sun.com/app/docs/doc/820-4496/ghgxk?a=view Grizzly Comet]
     * [http://tomcat.apache.org/tomcat-6.0-doc/aio.html Apache Tomcat 6.0 - Advanced IO and Tomcat]
   * overlapping requests to mask connection refresh establishment latency
-  * JMS intergration
+  * JMS integration
+  * support for sharing a comet connection across multiple browser windows/tabs
