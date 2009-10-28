@@ -2,6 +2,13 @@
 
 = Release Notes =
 
+== 1.0.10 ==
+
+  * Fixed an issue where the deflater was not flushing everything for large chunks of data.
+  * Improved the performance of compression by not computing Adler check sum. IE does not support these anyway.
+  * Named the heartbeat thread for easier diagnosis.
+  * Cleaned up the Comet test cases.
+
 == 1.0.9 ==
 
   * Added support for keeping the HTTP session alive when only the comet connection is in use and no other client HTTP requests are being made which would normally cause the HTTP session to timeout. [http://code.google.com/p/gwt-comet/source/detail?r=28 r28] [http://code.google.com/p/gwt-comet/source/detail?r=29 r29]
