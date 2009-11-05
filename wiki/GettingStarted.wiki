@@ -114,7 +114,7 @@ public class InstantMessagingServlet extends CometServlet {
 
 === Comet Session Model ===
 
-If you wish to use the built in message queueing you can use the {{{CometSession}}} for example:
+If you wish to use the built in message queueing you can use the {{{CometSession}}}. If you wish to setup the {{{CometSession}}} when the first request is received:
 
 {{{
 public class InstantMessagingServlet extends CometServlet {
@@ -123,8 +123,12 @@ public class InstantMessagingServlet extends CometServlet {
 	
 	@Override
 	protected void doComet(CometServletResponse cometResponse) throws ServletException, IOException {
-		CometSession cometSession = cometResponse.getSession();
-		messagingSystem.registerMessageSink(cometSession);
+		CometSession cometSession = cometResponse.getSession(false);
+		if (cometSession == null) {
+			// The comet session has not been created yet so create it.
+			cometSession = cometResponse.getSession();
+			messagingSystem.registerMessageSink(cometSession);
+		}
 	}
 }
 }}}
