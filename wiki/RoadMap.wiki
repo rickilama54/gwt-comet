@@ -1,4 +1,5 @@
 #summary A bullet point road map for gwt-comet
+  * support for GWT 2.0's [http://code.google.com/p/google-web-toolkit/wiki/RpcDirectEval direct-eval RPC]
   * subdomain support
   * Async IO
     * [http://jcp.org/en/jsr/detail?id=315 JSR 315: Java Servlet 3.0 Specification]
