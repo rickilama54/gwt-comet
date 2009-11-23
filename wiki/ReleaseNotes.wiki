@@ -2,6 +2,11 @@
 
 = Release Notes =
 
+== 1.0.11 ==
+
+  * Added support for updating Catalina/Tomcat's sessions last access time with out refreshing the connection.
+  * Cleaned up the Comet test cases.
+
 == 1.0.10 ==
 
   * Fixed an issue where the deflater was not flushing everything for large chunks of data.
