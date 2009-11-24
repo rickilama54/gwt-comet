@@ -2,9 +2,13 @@
 
 = Release Notes =
 
+== 1.0.12 ==
+
+  * Added support for updating Catalina/Tomcat 5.5's sessions last access time with out refreshing the connection.
+
 == 1.0.11 ==
 
-  * Added support for updating Catalina/Tomcat's sessions last access time with out refreshing the connection.
+  * Added support for updating Catalina/Tomcat 6.0's sessions last access time with out refreshing the connection.
   * Cleaned up the Comet test cases.
 
 == 1.0.10 ==
