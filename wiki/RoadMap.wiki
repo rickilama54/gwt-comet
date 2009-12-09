@@ -1,5 +1,6 @@
 #summary A bullet point road map for gwt-comet
   * support for GWT 2.0's [http://code.google.com/p/google-web-toolkit/wiki/RpcDirectEval direct-eval RPC]
+  * support for [http://dev.w3.org/html5/websockets/ web sockets] now supported by [http://blog.chromium.org/2009/12/web-sockets-now-available-in-google.html Chrome] and soon to be supported by [https://bugzilla.mozilla.org/show_bug.cgi?id=472529 FireFox].
   * subdomain support
   * Async IO
     * [http://jcp.org/en/jsr/detail?id=315 JSR 315: Java Servlet 3.0 Specification]
