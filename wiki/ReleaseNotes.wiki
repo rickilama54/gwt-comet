@@ -2,6 +2,11 @@
 
 = Release Notes =
 
+== 1.1.0 ==
+
+  * Support for GWT 2.0. Not compatible with GWT 1.7 or earlier.
+  * Support for [http://code.google.com/p/google-web-toolkit/wiki/RpcDirectEval direct-eval RPC]. see [GettingStarted#Receiving_GWT_Serialized_Types Receiving GWT Serialized Types]
+
 == 1.0.12 ==
 
   * Added support for updating Catalina/Tomcat 5.5's sessions last access time with out refreshing the connection.
@@ -10,6 +15,7 @@
 
   * Added support for updating Catalina/Tomcat 6.0's sessions last access time with out refreshing the connection.
   * Cleaned up the Comet test cases.
+  * Added support for overlapping requests to mask connection refresh establishment latency.
 
 == 1.0.10 ==
 
