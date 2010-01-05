@@ -73,6 +73,12 @@ CometSerializer serializer = GWT.create(InstantMessagingCometSerializer.class);
 CometClient client = new CometClient(url, serializer, listener);
 }}}
 
+By default GWT's normal RPC serialization is used but you can use GWT 2.0's [http://code.google.com/p/google-web-toolkit/wiki/RpcDirectEval direct-eval RPC] by specifying the {{{SerialMode}}} in the {{{SerialTypes}}} annotation for example:
+
+{{{
+@SerialTypes(mode = SerialMode.DE_RPC, value = { Message.class, StatusUpdate.class })
+}}}
+
 == Server Side ==
 
 Server side application code is centred around three main classes:
