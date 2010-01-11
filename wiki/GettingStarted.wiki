@@ -43,7 +43,7 @@ CometListener listener = new CometListener() {
 };
 }}}
 
-The first four events notify the client application of the state of the Comet connection.
+The first five events notify the client application of the state of the Comet connection.
 The last {{{onMessage()}}} event notifies the client application that a batch of messages have been received.
 The messages will be Strings or GWT serialized objects depending on what the server sends.  
 
