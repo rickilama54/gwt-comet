@@ -30,6 +30,8 @@ CometListener listener = new CometListener() {
 	}
 	public void onHeartbeat() {
 	}
+	public void onRefresh() {
+	}
 	public void onError(Throwable exception, boolean connected) {
 		// warn the user of the connection error
 	}
