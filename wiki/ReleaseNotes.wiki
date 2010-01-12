@@ -2,6 +2,11 @@
 
 = Release Notes =
 
+== 1.1.1 ==
+
+  * Support for connecting across sub domains in all browsers.
+  * Support for connecting across all domains in all browsers except IE.
+
 == 1.1.0 ==
 
   * Support for GWT 2.0. Not compatible with GWT 1.7 or earlier.
