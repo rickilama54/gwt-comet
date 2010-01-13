@@ -18,6 +18,16 @@ Firstly you need to include the following GWT module dependency in your project:
 <inherits name="net.zschech.gwt.comet.Comet" />
 }}}
 
+=== Cross domain support === 
+
+If you wish to host your GWT application on one domain and connect your Comet client to another domain you need to use GWT's cross site linker by including the following in your project's gwt.xml:
+
+{{{
+<add-linker name="xs"/>
+}}}
+
+At the moment IE only supports cross sub-domains e.g. from {{{www.example.com}}} to {{{comet.example.com}}}.
+
 === Create Your Comet Listener ===
 
 Next create your {{{CometListener}}} for processing your Comet events as follows:
