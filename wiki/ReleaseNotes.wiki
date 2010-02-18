@@ -3,6 +3,10 @@
 
 = Release Notes =
 
+== 1.1.2 ==
+
+  * Fixed "Unexpected disconnection" error when disconnecting {{{HTTPRequestCometTransport}}} from the client side.
+
 == 1.1.1 ==
 
   * Support for connecting across sub domains in all browsers.
