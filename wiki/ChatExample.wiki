@@ -1,7 +1,5 @@
-#summary One-sentence summary of this page.
-#labels Featured
-
 #summary A Complete Chat Example
+#labels Featured
 = A Complete Chat Example =
 
 This complete example includes all client and server side code required to implement a simple group chat system. See the complete [http://code.google.com/p/gwt-comet/source/browse/#svn/trunk/src/net/zschech/gwt/chat source code].
