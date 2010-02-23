@@ -20,16 +20,28 @@ The [http://code.google.com/p/gwt-comet/source/browse/#svn/trunk/src/net/zschech
 
 {{{
 <web-app>
+  <!-- Listener for shutting down the comet processor when the ServletContext is destroyed -->
+  <listener>
+    <listener-class>net.zschech.gwt.comet.server.CometServletContextListener</listener-class>
+  </listener>
+  
+  <!-- Listener for invalidating CometSessions when HTTPSessions are invalidated -->
+  <listener>
+    <listener-class>net.zschech.gwt.comet.server.CometHttpSessionListener</listener-class>
+  </listener>
+
   <!-- the RPC service called by the client -->
   <servlet>
     <servlet-name>chatService</servlet-name>
     <servlet-class>net.zschech.gwt.chat.server.ChatServiceImpl</servlet-class>
   </servlet>
+
   <!-- the comet servlet for streaming messages to the client -->
   <servlet>
     <servlet-name>chatComet</servlet-name>
     <servlet-class>net.zschech.gwt.comet.server.CometServlet</servlet-class>
   </servlet>
+
   <servlet-mapping>
     <servlet-name>chatService</servlet-name>
     <url-pattern>/net.zschech.gwt.chat.Chat/chat</url-pattern>
