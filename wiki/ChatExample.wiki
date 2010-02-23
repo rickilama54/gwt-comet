@@ -7,14 +7,14 @@ This complete example includes all client and server side code required to imple
 == Client Side ==
 
 The [http://code.google.com/p/gwt-comet/source/browse/#svn/trunk/src/net/zschech/gwt/chat/client client package] includes:
- # An [http://code.google.com/p/gwt-comet/source/browse/trunk/src/net/zschech/gwt/chat/client/ChatEntryPoint.java chat entry point] which sets up a simple gui for logging in, setting your status, and sending messages.
+ # A [http://code.google.com/p/gwt-comet/source/browse/trunk/src/net/zschech/gwt/chat/client/ChatEntryPoint.java chat entry point] which sets up a simple gui for logging in, setting your status, and sending messages.
  # A [http://code.google.com/p/gwt-comet/source/browse/trunk/src/net/zschech/gwt/chat/client/ChatService.java chat remote service] and associated message classes etc which the client uses to interact with the server.
 
 == Server Side ==
 
 The [http://code.google.com/p/gwt-comet/source/browse/#svn/trunk/src/net/zschech/gwt/chat/server server package] includes:
  # An implementation of the [http://code.google.com/p/gwt-comet/source/browse/trunk/src/net/zschech/gwt/chat/server/ChatServiceImpl.java chat remote service].
- # The map of logged in users used to manage message routing.
+ # The map of logged in users used for message routing.
 
 === web.xml ===
 
