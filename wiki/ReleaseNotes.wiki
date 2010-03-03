@@ -6,7 +6,7 @@
 == 1.1.3 ==
 
   * Added support for updating Jetty 7's sessions last access time with out refreshing the connection.
-  * Support for IE client side message batch processing.
+  * Support for IE client side message batch processing. (Changes the IE message protocol)
   * Support for using arrays as a serialized message type. (requires two issues to be fixes in GWT [http://code.google.com/p/google-web-toolkit/issues/detail?id=1822 1922] and [http://code.google.com/p/google-web-toolkit/issues/detail?id=4657 4657])
   * Removed System.out debugging issue 1
   * Improved specific server fall back code.
