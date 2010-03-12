@@ -13,3 +13,4 @@
   * support for sharing a comet connection across multiple browser windows/tabs
   * support for gwt.elideTypeNamesFromRPC
   * support for rpc.blacklist
+  * support for {{{<distributable/>}}} web apps.
