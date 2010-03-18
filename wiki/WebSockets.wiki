@@ -29,12 +29,14 @@ Use {{{WebSocket.send(String data)}}} to send messages.
 
 {{{
 import net.zschech.gwt.websockets.client.CloseHandler;
+import net.zschech.gwt.websockets.client.ErrorHandler;
 import net.zschech.gwt.websockets.client.MessageEvent;
 import net.zschech.gwt.websockets.client.MessageHandler;
 import net.zschech.gwt.websockets.client.OpenHandler;
 import net.zschech.gwt.websockets.client.WebSocket;
 
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.JavaScriptException;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -107,25 +109,36 @@ public class WebSocketEntryPoint implements EntryPoint {
 	}
 	
 	public void connect() {
-		webSocket = WebSocket.create(url.getValue());
-		webSocket.setOnOpen(new OpenHandler() {
-			@Override
-			public void onOpen(WebSocket webSocket) {
-				output("open", "silver");
-			}
-		});
-		webSocket.setOnClose(new CloseHandler() {
-			@Override
-			public void onClose(WebSocket webSocket) {
-				output("close", "silver");
-			}
-		});
-		webSocket.setOnMessage(new MessageHandler() {
-			@Override
-			public void onMessage(WebSocket webSocket, MessageEvent event) {
-				output("message: " + event.getData(), "black");
-			}
-		});
+		try {
+			webSocket = WebSocket.create(url.getValue());
+			webSocket.setOnOpen(new OpenHandler() {
+				@Override
+				public void onOpen(WebSocket webSocket) {
+					output("open", "silver");
+				}
+			});
+			webSocket.setOnClose(new CloseHandler() {
+				@Override
+				public void onClose(WebSocket webSocket) {
+					output("close", "silver");
+				}
+			});
+			webSocket.setOnError(new ErrorHandler() {
+				@Override
+				public void onError(WebSocket webSocket) {
+					output("error", "red");
+				}
+			});
+			webSocket.setOnMessage(new MessageHandler() {
+				@Override
+				public void onMessage(WebSocket webSocket, MessageEvent event) {
+					output("message: " + event.getData(), "black");
+				}
+			});
+		}
+		catch (JavaScriptException e) {
+			output(e.toString(), "red");
+		}
 	}
 	
 	public void output(String text, String color) {
@@ -136,5 +149,4 @@ public class WebSocketEntryPoint implements EntryPoint {
 		scrollPanel.scrollToBottom();
 	}
 }
-
 }}}
