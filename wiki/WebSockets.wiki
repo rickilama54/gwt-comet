@@ -1,4 +1,5 @@
 #summary Web Sockets for the Google Web Toolkit
+#labels Featured
 
 = Getting Started =
 
