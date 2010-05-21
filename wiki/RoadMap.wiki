@@ -8,6 +8,7 @@
     * [http://docs.sun.com/app/docs/doc/820-4496/ghgxk?a=view Grizzly Comet]
     * [http://tomcat.apache.org/tomcat-6.0-doc/aio.html Apache Tomcat 6.0 - Advanced IO and Tomcat]
     * [https://atmosphere.dev.java.net/ Atmosphere support]
+    * [http://googleappengine.blogspot.com/2010/05/app-engine-at-google-io-2010.html GAE Channel API support]
   * ~~overlapping requests to mask connection refresh establishment latency~~ (included in 1.0.11)
   * JMS integration
   * support for sharing a comet connection across multiple browser windows/tabs
