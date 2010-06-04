@@ -5,7 +5,7 @@
 
 == 1.1.5 ==
 
-  * Support for embedded Grizzly and GlassFish Async Servlets which implement non-blocking IO and non-blocking threading.
+  * Support for embedded Grizzly and !GlassFish Async Servlets which implement non-blocking IO and non-blocking threading.
   * Prevent Chrome sniffing mime types removing the need for the server to padding [http://code.google.com/p/gwt-comet/source/detail?r=138 r138]. Chrome 6 increased the previously required padding preventing gwt-comet for detecting connections. Any changes to Chrome in the future will not require changes to gwt-comet now.
   * Fixed client reconnection logic.
   * Improved server side error handling.
