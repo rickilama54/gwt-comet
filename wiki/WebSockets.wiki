@@ -5,13 +5,15 @@
 
 gwt-web-sockets provides a simple GWT wrapper around the browsers native Web Socket implementation.
 
-Currently only development releases of Chrome support this so don't expect it to work in other browsers. This is not (yet) a cross browser Web Socket implementation.
+Currently only Chrome supports this so don't expect it to work in other browsers. This is not (yet) a cross browser Web Socket implementation.
 
 Its simple design is based around GWT's {{{com.google.gwt.xhr.client.XMLHttpRequest}}}.
 
 === GWT Module Dependency ===
 
-Firstly you need to include the following GWT module dependency in your project:
+Download gwt-web-sockets.jar from the [http://code.google.com/p/gwt-comet/downloads/list download list]
+
+Then you need to include the following GWT module dependency in your project:
 
 {{{
 <inherits name="net.zschech.gwt.websockets.WebSockets" />
