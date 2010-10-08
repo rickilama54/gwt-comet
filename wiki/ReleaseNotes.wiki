@@ -3,6 +3,18 @@
 
 = Release Notes =
 
+== 1.2.0 ==
+
+  * Update to GWT 2.1 as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/d5da4e38160e2927 discussion].
+
+== 1.1.6 ==
+
+  * Support for !HttpServletResponseWrappers as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/d81d0d3fb7b96a69 discussion].
+  * Support for [http://dev.w3.org/html5/eventsource/ Server-Sent Events]. Safari and Chrome currently implement this.
+  * Various performance improvements.
+  * Prevent Firefox from aborting XHR request with ESC key as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/daba4abcd240fa6c discussion].
+  * Fix bug in client requesting heartbeat interval with a url parameter as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/d236d0ccf453f5a5 discussion].
+
 == 1.1.5 ==
 
   * Support for embedded Grizzly and !GlassFish Async Servlets which implement non-blocking IO and non-blocking threading.
@@ -15,7 +27,7 @@
   * Fix issue 1
   * Rewritten test example.
   * Chat and Test examples packaged into a war file.
-  * Fixed refresh logic when no sessions as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/c7125628a8d867a9 discussion]
+  * Fixed refresh logic when no sessions as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/c7125628a8d867a9 discussion].
 
 == 1.1.3 ==
 
