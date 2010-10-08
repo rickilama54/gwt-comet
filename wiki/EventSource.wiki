@@ -11,6 +11,8 @@ Its simple design is based around GWT's {{{com.google.gwt.xhr.client.XMLHttpRequ
 
 === GWT Module Dependency ===
 
+Download gwt-event-source.jar from the [http://code.google.com/p/gwt-comet/downloads/list download list]
+
 Firstly you need to include the following GWT module dependency in your project:
 
 {{{
