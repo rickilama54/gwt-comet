@@ -3,6 +3,15 @@
 
 = Release Notes =
 
+== 1.2.2 ==
+
+  * Flow control for reducing send rate if the client is struggling to processes the messages in a timely manner.
+  * Update to GWT 2.2 serializers: issue 13 and issue 14.
+
+== 1.2.1 ==
+
+  * Fix issue 9 where serialization code changed between gwt-2.1.0.M3 and gwt-2.1.0
+
 == 1.2.0 ==
 
   * Update to GWT 2.1 as per [http://groups.google.com/group/gwt-comet/browse_thread/thread/d5da4e38160e2927 discussion].
