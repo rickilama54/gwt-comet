@@ -3,6 +3,11 @@
 
 = Release Notes =
 
+== 1.2.3 ==
+
+  * Fixed up licensing: issue 18.
+  * Update to GWT 2.3 serializers: issue 19.
+
 == 1.2.2 ==
 
   * Flow control for reducing send rate if the client is struggling to processes the messages in a timely manner.
